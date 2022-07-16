@@ -15,6 +15,9 @@ function FoxImage() {
     .then(data => setImage(data.image))
 
   }, [])
+  if(!image){
+    return <h2>Loading....</h2>
+  }
   
   return (
     <div>
